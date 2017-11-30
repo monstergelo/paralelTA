@@ -1,0 +1,19 @@
+﻿Build started 30/11/2017 10:53:51.
+     1>Project "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\CinderProject.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\include /I..\..\include /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WIN32_WINNT=0x0601 /D _WINDOWS /D NOMINMAX /D _DEBUG /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\\" /Fd"C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\CinderProjectApp.cpp
+         CinderProjectApp.cpp
+     1>c:\users\cxxxv\documents\project\ta\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\cinderproject\src\cinderprojectapp.cpp(30): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\cxxxv\documents\project\ta\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\cinderproject\src\cinderprojectapp.cpp(41): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\cxxxv\documents\project\ta\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\cinderproject\src\cinderprojectapp.cpp(154): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\cxxxv\documents\project\ta\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\cinderproject\src\cinderprojectapp.cpp(155): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\CinderProject.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\..\lib\msw\x86 /LIBPATH:..\..\lib\msw\x86\Debug\v120\ cinder.lib OpenGL32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /NODEFAULTLIB:LIBCPMT /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\CinderProject.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\CinderProject.lib" /MACHINE:X86 "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\Resources.res"
+         "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\CinderProjectApp.obj"
+         "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\Source.obj"
+         CinderProject.vcxproj -> C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\CinderProject.exe
+     1>Done Building Project "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\CinderProject.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:21.76
