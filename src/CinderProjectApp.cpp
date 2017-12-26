@@ -6,6 +6,9 @@
 using namespace ci;
 using namespace ci::app;
 using namespace std;
+
+extern "C" int test();
+extern "C" int BurdenGPU();
 //===================================================================
 class Particle{
 public :
@@ -35,10 +38,18 @@ Particle::Particle(vec2 loc){
 	limitVely = 10.0f;
 }
 
+void CPUBurden(){
+	int burden = 5000000;
+	int arb = 1;
+	for (int i = 0; i< burden; i++){
+		arb = i ^ 2;
+	}
+}
+
 void Particle::update(){
 	//friction x-axis
 	if (mVel.x != 0){
-		mAccel.x += -mVel.x*0.1;
+		mAccel.x += -mVel.x*0.1	;
 	}
 
 	//apply gravity
@@ -101,7 +112,7 @@ public:
 		//[commentout]//batch = gl::Batch::create(geom::Circle().radius(30), solidShader);
 
 		//create holder for circle data(location and such)
-		mInstanceData.resize(1024);
+		mInstanceData.resize(102400);
 		for (auto &circle : mInstanceData) {
 			circle.x = Rand::randFloat(float(getWindowWidth()));
 			circle.y = Rand::randFloat(float(getWindowHeight()));
@@ -116,7 +127,7 @@ public:
 
 		// Create a mesh for our circle. Position it with its center at the origin with a radius of 1.
 		// This makes it easy to manipulate the position and radius in our vertex shader.
-		mVboMesh = gl::VboMesh::create(geom::Circle().center(vec2(0)).radius(4).subdivisions(30));
+		mVboMesh = gl::VboMesh::create(geom::Circle().center(vec2(0)).radius(1).subdivisions(30));
 
 		// Append the instanced data to the mesh, so we have access to all the data in our vertex shader.
 		mVboMesh->appendVbo(instanceDataLayout, mInstanceVbo);
@@ -192,6 +203,7 @@ public:
 
 void CinderProjectApp::setup()
 {
+	console() << BurdenGPU() << std::endl;
 	p.AddParticle(50);	
 }
 
@@ -205,10 +217,13 @@ void CinderProjectApp::mouseDown( MouseEvent event )
 
 void CinderProjectApp::update()
 {
+	//arbitrary burden
+	//CPUBurden();
+	BurdenGPU();
 	p.update();
 	delay++;
 	if (delay > 0){
-		p.AddParticle(5, 200, 200);
+		p.AddParticle(20, 200, 200);
 		delay = 0;
 	}
 }
@@ -217,6 +232,7 @@ void CinderProjectApp::draw()
 {
 	gl::clear( Color( 0, 0, 0 ) );
 	p.draw();
+	gl::drawString("Framerate: " + to_string(getAverageFps()), vec2(10.0f, 10.0f));
 }
 
 CINDER_APP( CinderProjectApp, RendererGl ) 
