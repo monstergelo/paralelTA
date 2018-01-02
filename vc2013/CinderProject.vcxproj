@@ -121,15 +121,24 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\CinderProjectApp.cpp" />
+    <ClCompile Include="Particle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\Resources.h" />
+    <ClInclude Include="CinderProjectApp.h" />
+    <ClInclude Include="Particle.h" />
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="burden.cu" />
     <CudaCompile Include="test.cu">
       <PtxAsOptionV Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</PtxAsOptionV>
     </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resources\CinderApp.icns" />
+    <None Include="..\resources\fragment.frag" />
+    <None Include="..\resources\geometry.geom" />
+    <None Include="..\resources\vertex.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

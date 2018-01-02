@@ -1,9 +1,9 @@
-﻿Build started 26/12/2017 22:38:51.
+﻿Build started 02/01/2018 15:47:08.
      1>Project "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\CinderProject.vcxproj" on node 2 (Build target(s)).
      1>InitializeBuildStatus:
-         Creating "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\CinderProject.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\CinderProject.tlog\unsuccessfulbuild".
        AddCudaCompileDeps:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_WIN32_WINNT=0x0601 /D_WINDOWS /DNOMINMAX /D_DEBUG /D_UNICODE /DUNICODE /I..\include /I"..\..\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" /I. /FIcuda_runtime.h /c C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\burden.cu 
+       Skipping target "AddCudaCompileDeps" because all output files are up-to-date with respect to the input files.
        AddCudaCompileDeps:
        Skipping target "AddCudaCompileDeps" because all output files are up-to-date with respect to the input files.
        AddCudaCompilePropsDeps:
@@ -12,26 +12,11 @@
        Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
      1>Project "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\CinderProject.vcxproj" (1) is building "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\CinderProject.vcxproj" (1:2) on node 2 (CudaBuildCore target(s)).
      1>CudaBuildCore:
-         Compiling CUDA source file burden.cu...
+       Skipping target "CudaBuildCore" because all output files are up-to-date with respect to the input files.
+     1>Done Building Project "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\CinderProject.vcxproj" (CudaBuildCore target(s)).
      1>Project "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\CinderProject.vcxproj" (1) is building "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\CinderProject.vcxproj" (1:3) on node 1 (CudaBuildCore target(s)).
      1>CudaBuildCore:
        Skipping target "CudaBuildCore" because all output files are up-to-date with respect to the input files.
-     1>Done Building Project "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\CinderProject.vcxproj" (CudaBuildCore target(s)).
-     1>CudaBuildCore:
-         cmd.exe /C "C:\Users\CXXXV\AppData\Local\Temp\tmpd0de43e15b8d4f4ab094db58992b4616.cmd"
-         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin" -x cu  -I..\include -I..\..\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir Debug -maxrregcount=0 --ptxas-options=-v --machine 32 --compile -cudart static  -g   -DWIN32 -D_WIN32_WINNT=0x0601 -D_WINDOWS -DNOMINMAX -D_DEBUG -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MTd " -o C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\burden.cu.obj "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\burden.cu"
-         
-         C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin" -x cu  -I..\include -I..\..\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir Debug -maxrregcount=0 --ptxas-options=-v --machine 32 --compile -cudart static  -g   -DWIN32 -D_WIN32_WINNT=0x0601 -D_WINDOWS -DNOMINMAX -D_DEBUG -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MTd " -o C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\burden.cu.obj "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\burden.cu" 
-         ptxas info    : 0 bytes gmem
-         ptxas info    : Function properties for _ZN4dim3C1Ejjj
-             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
-         ptxas info    : Function properties for _ZN4dim3C2Ejjj
-             16 bytes stack frame, 16 bytes spill stores, 16 bytes spill loads
-         ptxas info    : Compiling entry function '_Z9addKernelPi' for 'sm_30'
-         ptxas info    : Function properties for _Z9addKernelPi
-             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
-         ptxas info    : Used 5 registers, 324 bytes cmem[0]
-         burden.cu
      1>Done Building Project "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\CinderProject.vcxproj" (CudaBuildCore target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\include /I..\..\include /Zi /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WIN32_WINNT=0x0601 /D _WINDOWS /D NOMINMAX /D _DEBUG /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\\" /Fd"C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\CinderProjectApp.cpp
@@ -41,10 +26,7 @@
          cl /c /I..\include /I..\..\include /Zi /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WIN32_WINNT=0x0601 /D _WINDOWS /D NOMINMAX /D _DEBUG /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\\" /Fd"C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\CinderProjectApp.cpp
          
          CinderProjectApp.cpp
-     1>..\src\CinderProjectApp.cpp(33): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\src\CinderProjectApp.cpp(52): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
-     1>..\src\CinderProjectApp.cpp(165): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>..\src\CinderProjectApp.cpp(166): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>..\src\CinderProjectApp.cpp(10): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
        ResourceCompile:
          All outputs are up-to-date.
        Link:
@@ -52,6 +34,7 @@
          "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\test.cu.obj"
          "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\Resources.res"
          "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\CinderProjectApp.obj"
+         "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\Particle.obj"
          CinderProject.vcxproj -> C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\CinderProject.exe
        FinalizeBuildStatus:
          Deleting file "C:\Users\CXXXV\Documents\Project\TA\coba-coba\cinder_0.9.1_vc2013\cinder_0.9.1_vc2013\CinderProject\vc2013\build\Win32\Debug\intermediate\CinderProject.tlog\unsuccessfulbuild".
@@ -60,4 +43,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:38.36
+Time Elapsed 00:00:18.37
